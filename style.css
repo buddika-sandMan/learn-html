@@ -13,7 +13,6 @@ body{
 }
 
 #box-1{
-    position: -webkit-sticky;
     background-color: red;
     top: 20px;
     left: 20px;
@@ -28,4 +27,18 @@ body{
     position: absolute;
     top: 20px;
     left: 50px;
+}
+
+ul{
+    background-color: blueviolet;
+    list-style: none;
+}
+
+ul li{
+    background-color: brown;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    float: left;
 }
