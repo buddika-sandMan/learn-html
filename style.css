@@ -1,4 +1,6 @@
-body{
+/* body{
+    margin: 0;
+    padding: 0;
     background-image: url(./images/pexels-pixabay-531880.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -25,20 +27,29 @@ body{
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 20px;
     left: 50px;
 }
 
 ul{
     background-color: blueviolet;
     list-style: none;
+    padding: 50px;
+    margin-top: 0;
 }
 
 ul li{
     background-color: brown;
     padding: 10px;
-    margin: 20px;
+    margin: 5px;
     border: 2px solid black;
     border-radius: 15px;
-    float: left;
+    float: right;
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
 }
+
+ul li:hover{
+    background-color: black;
+    color: bisque;
+} */
