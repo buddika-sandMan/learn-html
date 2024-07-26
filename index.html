@@ -1,238 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
+    <!-- <input type="button" value="Submit" onclick="submit()"> -->
+    <h1 id="head-1"></h1> 
+    <input type="button" value="Click me" onclick="btnClick()">
 
-  <!-- <div class="container-fluid bg-danger">
-        <div class="row bg-dark m-2 text-white">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-        </div>
-        <div class="row bg-primary m-2 text-white">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-        </div>
-        <div class="row bg-secondary m-2 text-white">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-        </div>
-        <div class="row bg-info m-2 text-white">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-        </div>
-        <div class="row bg-info m-2">
-          <div class="col bg-danger-subtle">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-          </div>
-          <div class="col bg-danger-subtle">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-          </div>
-          <div class="col bg-danger-subtle">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae, excepturi fugiat ad error nulla architecto debitis veniam inventore doloribus unde odit animi, cumque enim id dolorem exercitationem! Dolor, nesciunt!</p>
-          </div>            
-        </div>
-        <div class="row m-2">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    <script>
+        // function submit(){
+        //     document.write("Hello World!");
+        // }
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-black text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
-          suscipit repudiandae, officiis quisquam dolorem iste, laborum maxime
-          consequatur adipisci, veritatis fugiat vero consectetur a
-          accusantium! Quas tempora expedita perspiciatis. Ullam.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-primary text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, aut
-        voluptas sit quidem modi, ab in error deserunt consectetur atque
-        cumque eius dolor repellat provident, ipsam possimus? Quo, distinctio
-        nam.
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-danger text-white">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam,
-        provident laboriosam voluptatibus soluta doloribus eaque corrupti
-        quisquam. Impedit a dolores corporis ut velit, doloremque nemo cum
-        laudantium voluptatum soluta? Quae!
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-secondary text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Voluptatibus eos fugit debitis ad ut, doloremque sit. Minima nulla
-          sequi voluptate totam dicta, rerum sunt ratione praesentium, maxime
-          debitis incidunt accusantium.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-dark text-white">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
-          quia soluta. Odit eaque quisquam, repudiandae aut officiis quis
-          nesciunt quidem quae pariatur ab et quo tempore corrupti provident
-          laudantium perspiciatis!
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-warning text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          assumenda optio veniam unde sunt dolor facere, fugit aspernatur
-          fugiat in voluptas dicta totam necessitatibus, ex recusandae quas
-          saepe. Aspernatur, unde.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-light">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          nam minus suscipit pariatur? Nisi dolor, consequatur qui dolorum
-          ratione magnam optio quae rerum nam amet obcaecati quia eveniet
-          reiciendis excepturi.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-success text-white">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-          inventore cum cupiditate quia molestias iste reprehenderit repellat
-          tempore consequatur, animi ipsa praesentium officiis eum illum
-          soluta dicta maiores ad fugiat.
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-primary text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-          optio et quam iure nemo voluptas provident libero deserunt
-          recusandae voluptates. Odio ipsum doloremque repellendus natus
-          repellat blanditiis ullam, ut sit!
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Repellendus, dolorem in pariatur recusandae quae accusantium numquam
-          quas delectus aliquid reiciendis non omnis dicta dolor magni sed
-          nobis aliquam excepturi quod?
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-danger text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Necessitatibus ad numquam odit quis cum labore quae, eius et harum
-          laboriosam veritatis dolor esse hic blanditiis neque iure sequi
-          accusamus minima!
-        </p>
-      </div>
-      <div class="col-sm-12 col-lg-1 col-md-2 bg-dark text-white">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt
-          ea alias vero dolorem ullam cupiditate debitis et nemo.
-          Reprehenderit quae fugiat, a animi repellat distinctio suscipivdsvt
-          eveniet nobis possimus cum.
-        </p>
-      </div>
-    </div>
-  </div>
+        // console.log("Hello World!");
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+        // class Customer {
+        //     name;
+        //     age;
+        //     address;
+
+        //     constructor(name, age, address) {
+        //         this.name = name;
+        //         this.age = age;
+        //         this.address = address;
+        //     }
+
+        //     setName(name) {
+        //         this.name = name;
+        //     }
+        //     setAge(age) {
+        //         this.age = age;
+        //     }
+        //     setAddress(address) {
+        //         this.address = address;
+        //     }
+
+        //     getName() {
+        //         return this.name; // Fixed: use 'this.name' instead of 'name'
+        //     }
+        //     getAge() {
+        //         return this.age;
+        //     }
+        //     getAddress() {
+        //         return this.address;
+        //     }
+        // }
+
+        // let Customer1 = new Customer("Senuri", 21, "Moratuwa");
+        // let Customer2 = new Customer("Melisa", 25, "Ja-ela");
+
+        // console.log(Customer2.getName());
+
+        
+        function btnClick(){
+            document.getElementById("head-1").innerHTML="Hi Buddika";
+        }
+
+    </script>
 </body>
-
 </html>
